@@ -1,74 +1,69 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
 const { Schema } = mongoose;
 
-const twitter_users = new Schema({
+const twitter_users = new Schema(
+  {
     first_name: {
-        type: String,
-        required:true,
-        //minlength:10
+      type: String,
+      required: true,
     },
     last_name: {
-        type: String,
-        required:true,
-        //minlength:10
+      type: String,
+      required: true,
     },
     full_name: {
-        type: String,
-        required:true, 
+      type: String,
+      required: true,
     },
     user_name: {
-        type: String,
-        required:true, 
+      type: String,
+      required: true,
     },
     email: {
-        type: String,
-        //required:true,
-        //minlength:10
+      type: String,
     },
     password: {
-        type: String,
-        required:true,
-        //minlength:10
+      type: String,
+      required: true,
     },
     mobile: {
-        type: String,
-        //required:true,
-        //minlength:10
+      type: String,
     },
     followers: {
-        type: Array,
-        //required:true,
+      type: Array,
     },
     following: {
-        type: Array,
-        //required:true,
+      type: Array,
     },
     token: {
-        type: String,
-        //required:true,
-        //minlength:10
+      type: String,
     },
     profile_picture: {
-        type: String,
-        //required:true,
-        minlength:10
+      type: String,
+      minlength: 10,
     },
     dob: {
-        type: Date,
-        default: new Date(),
+      type: Date,
+      default: new Date(),
     },
     created_at: {
-        type: Date,
-        default: new Date(),
+      type: Date,
+      default: new Date(),
     },
     updated_date: {
-        type: Date,
-    }
-},{
-    toJSON:{
-        virtuals:true
-    }
-})
+      type: Date,
+    },
+  },
+  {
+    toJSON: {
+      virtuals: true,
+    },
+  }
+);
 
-module.exports = mongoose.model('twitter_users', twitter_users,'twitter_users');
+module.exports = mongoose.model(
+  "twitter_users",
+  twitter_users,
+  "twitter_users"
+);
