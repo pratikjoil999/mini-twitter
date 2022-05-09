@@ -1,0 +1,25 @@
+{
+  "name": "perfect-api-machine-test",
+  "version": "1.0.0",
+  "description": "machine test",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kruti kothari",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "env": "0.0.2",
+    "express": "^4.17.3",
+    "http": "0.0.1-security",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongodb": "^4.4.1",
+    "mongoose": "^6.2.8",
+    "path": "^0.12.7"
+  }
+}

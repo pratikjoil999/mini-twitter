@@ -1,0 +1,100 @@
+{
+    "employee":{
+        "500": "Internal server error",
+        "find":{
+            "200": "Employee Data fetched successfully!!",
+            "404": "No Active Employee Found"
+        },
+        "findById":{
+            "200": "Employee fetched successfully!!",
+            "404": "No Active Employee Found",
+            "201":"Employee is inactive."
+        },
+        "insert":{
+            "200": "Employee Inserted successfully!!"
+        },
+        "update":{
+            "200": "Employee Updated successfully!!",
+            "404": "Employee Not Found"
+        },
+        "delete":{
+            "200": "Employee Deleted successfully!!",
+            "404": "Employee Not Found"
+        }
+    },
+    "department":{
+        "500": "Internal server error",
+        "find":{
+            "200": "Department fetched successfully!!",
+            "404": "No Active Department Found"
+        },
+        "findById":{
+            "200": "Department fetched successfully!!",
+            "404": "No Active Department Found",
+            "201":"Department is inactive."
+        },
+        "insert":{
+            "200": "Department Inserted successfully!!"
+        },
+        "update":{
+            "200": "Department Updated successfully!!",
+            "404": "Department Not Found"
+        },
+        "delete":{
+            "200": "Department Deleted successfully!!",
+            "404": "Department Not Found"
+        }
+    },
+    "user":{
+        "500": "Internal server error",
+        "loginSucess":"Login successfully!!",
+        "loginFail":"Login failed!!",
+        "409":"Email / Mobile already exist",
+        "find":{
+            "200": "User Data fetched successfully!!",
+            "404": "No Active User Found"
+        },
+        "findById":{
+            "200": "User fetched successfully!!",
+            "404": "No Active User Found",
+            "201":"User is inactive."
+        },
+        "insert":{
+            "200": "User Inserted successfully!!"
+        },
+        "update":{
+            "200": "User Updated successfully!!",
+            "404": "User Not Found"
+        },
+        "delete":{
+            "200": "User Deleted successfully!!",
+            "404": "User Not Found"
+        }
+    },
+    "tweet":{
+        "500": "Internal server error",
+        "tweetSucess":"Tweet successfully!!",
+        "tweetFail":"Tweet failed!!",
+        "409":"Email / Mobile already exist",
+        "find":{
+            "200": "Tweet Data fetched successfully!!",
+            "404": "No Active Tweet Found"
+        },
+        "findById":{
+            "200": "Tweet fetched successfully!!",
+            "404": "No Active Tweet Found",
+            "201":"Tweet is inactive."
+        },
+        "insert":{
+            "200": "Tweet Inserted successfully!!"
+        },
+        "update":{
+            "200": "Tweet Updated successfully!!",
+            "404": "Tweet Not Found"
+        },
+        "delete":{
+            "200": "Tweet Deleted successfully!!",
+            "404": "Tweet Not Found"
+        }
+    }
+}
