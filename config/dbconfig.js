@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const env = process.env.NODE_ENV
 require('dotenv').config();
 
-const db_credential = JSON.parse(process.env[env])
+//const db_credential = JSON.parse(process.env[env])
 
 //const connectionString = db_credential.mongoprefix + /* db_credential.username + ':' + db_credential.password + '@' + */ db_credential.host + ':' + db_credential.port + '/' + db_credential.database; // There was an issue while connecting mongodb with development username and password
 
